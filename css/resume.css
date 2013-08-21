@@ -1,0 +1,147 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #ccc;
+  color: #000;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.resume {
+  margin: 1em;
+  padding: 1em;
+  background-color: #fff;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: .5em;
+  margin-bottom: .5em;
+}
+
+dl {
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+dt {
+  display: inline-block;
+  margin-right: .5em;
+  width: 1em;
+  text-align: center;
+}
+
+dd {
+  display: inline;
+  margin: 0;
+}
+
+header::after,
+dd::after {
+  white-space: pre;
+  content:'\A';
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* h1 */.name {
+  font-size: 3em;
+}
+
+/* h1 */.name .name__last {
+  font-weight: 900;
+}
+
+/* h2 */.title {
+  text-transform: none;
+}
+
+.emphasis {
+  color: #0bf;
+}
+
+
+.contact-info-wrapper {
+  float: right;
+  margin: .5em 0;
+}
+
+.resume-section {
+  margin-bottom: 1em;
+}
+
+.resume-section__body-wrapper {
+  padding-left: .5em;
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: .5em;
+  background: #73d8ff;
+  left: 15%;
+  margin-left: -.5em;
+}
+
+.timeline__point {
+  margin: .5em 0;
+}
+
+.timeline__point__date {
+  display: block;
+  width: 20%;
+  padding-right: 5.5em;
+  position: absolute;
+  line-height: 2.25;
+  text-align: center;
+}
+
+.timeline-point__icon {
+  background-color: #fff;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+  position: absolute;
+  left: 15%;
+  margin-left: -.9em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #73d8ff;
+}
+
+.timeline-point__icon.offcenter {
+  line-height: 1.3;
+}
+
+.timeline__point__summary {
+  margin-left: 20%;
+}
