@@ -1,20 +1,13 @@
 @import "../font-awesome/less/font-awesome.less";
+@import "core.less";
 
-// Colors
-@document-color: #ccc;
-@body-color: #fff;
-@text-color: #000;
-
-@lowlight-color: #ccc;
-@highlight-color: #0bf;
-@secondary-color: #73d8ff;
-
+//Colors
 @timeline-icon-color: #000;
 @timeline-icon-background: #fff;
 
+
 // Dimensions
-@document-font-size: 16px;
-@document-font-size-print: 11px;
+@resume-document-style: 16px;
 
 @header-bottom-buffer: .5em;
 
@@ -31,6 +24,7 @@
 
 @slice-offset: 0deg;
 
+
 //Mixins
 .slice-rotation(@position, @size) when (isnumber(@size)) {
   -webkit-transform: rotateZ(((@position / 100) * 360) + @slice-offset);
@@ -39,12 +33,6 @@
 .slice-rotation(@position) {
   -webkit-transform: rotateZ((((@position / 100) * 360) + @slice-offset) * -1);
   display: inline-block;
-}
-
-.box-sizing(@type: border-box) {
-  -webkit-box-sizing: @type;
-  -moz-box-sizing: @type;
-  box-sizing: @type;
 }
 
 .spinAnimation(@time, @delay: 0) {
@@ -89,31 +77,14 @@
 }
 
 
-*, *:after, *:before {
-  .box-sizing;
-}
-
 body {
-  font-family: 'Raleway', 'Helvetica', sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-feature-settings: 'kern';
-  -moz-font-feature-settings: 'kern';
-  font-feature-settings: 'kern';
-  font-size: @document-font-size;
-  background-color: @document-color;
-  color: @text-color;
-  margin: 0;
+  font-size: @resume-document-style;
 }
 
 body ::selection {
   background: @lowlight-color;
 }
 
-a {
-  color: @highlight-color;
-  font-weight: 600;
-  text-decoration: none;
-}
 
 p {
   margin: 0;

@@ -1,0 +1,93 @@
+// Colors
+@document-color: #ccc;
+@body-color: #fff;
+@text-color: #000;
+
+@lowlight-color: #ccc;
+@highlight-color: #0bf;
+@secondary-color: #73d8ff;
+
+
+// Dimensions
+@document-font-size-print: 11px;
+
+
+//Mixins
+.box-sizing(@type: border-box) {
+  -webkit-box-sizing: @type;
+  -moz-box-sizing: @type;
+  box-sizing: @type;
+}
+
+
+
+*, *:after, *:before {
+  .box-sizing;
+}
+
+body {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: 'kern';
+  -moz-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  background-color: @secondary-color;
+  color: @text-color;
+  margin: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 50px,
+    rgba(0, 0, 0, .3) 50px,
+    rgba(0, 0, 0, .3) 53px,
+    transparent 53px,
+    transparent 63px,
+    rgba(0, 0, 0, .3) 63px,
+    rgba(0, 0, 0, .3) 66px,
+    transparent 66px,
+    transparent 116px,
+    rgba(0, 0, 0, .3) 116px,
+    rgba(0, 0, 0, .3) 166px,
+    rgba(255, 255, 255, .3) 166px,
+    rgba(255, 255, 255, .3) 169px,
+    rgba(0, 0, 0, .3) 169px,
+    rgba(0, 0, 0, .3) 179px,
+    rgba(255, 255, 255, .3) 179px,
+    rgba(255, 255, 255, .3) 182px,
+    rgba(0, 0, 0, .3) 182px,
+    rgba(0, 0, 0, .3) 232px,
+    transparent 232px
+  ),
+  repeating-linear-gradient(
+    135deg,
+    transparent,
+    transparent 50px,
+    rgba(0, 0, 0, .3) 50px,
+    rgba(0, 0, 0, .3) 53px,
+    transparent 53px,
+    transparent 63px,
+    rgba(0, 0, 0, .3) 63px,
+    rgba(0, 0, 0, .3) 66px,
+    transparent 66px,
+    transparent 116px,
+    rgba(0, 0, 0, .3) 116px,
+    rgba(0, 0, 0, .3) 166px,
+    rgba(255, 255, 255, .3) 166px,
+    rgba(255, 255, 255, .3) 169px,
+    rgba(0, 0, 0, .3) 169px,
+    rgba(0, 0, 0, .3) 179px,
+    rgba(255, 255, 255, .3) 179px,
+    rgba(255, 255, 255, .3) 182px,
+    rgba(0, 0, 0, .3) 182px,
+    rgba(0, 0, 0, .3) 232px,
+    transparent 232px
+  ),
+  url(../img/greyzz_@2X_color.png);
+  background-size: auto, auto, 149px 139px;
+}
+
+a {
+  color: @highlight-color;
+  font-weight: 600;
+  text-decoration: none;
+}
