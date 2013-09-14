@@ -36,6 +36,7 @@ figcaption {
 
 .navbar-brand__first-name {
   color: #fff;
+  font-weight: 100;
 }
 
 
@@ -60,8 +61,32 @@ figcaption {
   background-color: transparent;
 }
 
-#projects {
-  padding-top: 7em;
+
+.jumbotron {
+  color: white;
+  background-image: url(/img/fenway_rainbow.jpg);
+  background-size: 110%;
+  min-height: 470px;
+  position: relative;
+  background-position: 0 -53px;
+}
+
+.jumbotron__wrapper {
+  margin: 20px 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.self-promotion-links {
+  list-style: none;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.self-promotion-links li {
+  display: inline-block;
 }
 
 .self-promotion-links a {
@@ -109,6 +134,12 @@ figcaption {
 .github-btn {
   border: 0;
   overflow: hidden;
+  float: right;
+}
+
+.row .github-btn {
+  float: none;
+  vertical-align: bottom;
 }
 
 /*
