@@ -50,24 +50,47 @@ figcaption {
   padding: 1.5em;
 }
 
-.nav>li>a[rel=definition] {
-  position: static;
-  display: inline;
-  padding: 0;
+.nav .nav {
+  display: none;
 }
 
-.nav>li>a[rel=definition]:hover,
-.nav>li>a[rel=definition]:focus {
-  background-color: transparent;
+.nav .active .nav {
+  display: block;
 }
 
+.nav > li > a {
+  font-weight: normal;
+  color: #333;
+}
+
+.nav .nav > li > a {
+  padding-left: 2em;
+}
+
+.nav > .active > a {
+  color: #00bbff;
+  font-weight: 600;
+}
+
+
+.pull-right{
+  position: relative;
+  z-index: 1;
+}
 
 .jumbotron {
+  position: relative;
   color: white;
+  background-image: url(/img/fenway_monster.png);
+  background-size: 932px 439px;
+  background-position: -46px 100%;
+  min-height: 390px;
+}
+
+.jumbotron.rainbow {
   background-image: url(/img/fenway_rainbow.jpg);
   background-size: 110%;
   min-height: 470px;
-  position: relative;
   background-position: 0 -53px;
 }
 
@@ -101,6 +124,15 @@ figcaption {
   display: none;
 }
 
+.project-title {
+  padding-top: 100px;
+}
+
+.sidebar-offcanvas .affix {
+  top: 100px;
+  width: 260px;
+}
+
 @media (min-width: 1200px) {
   .portrait-xl {
     display: inline;
@@ -120,12 +152,32 @@ figcaption {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .jumbotron {
+    background-position: -240px 100%;
+    min-height: 0;
+  }
+
+  .jumbotron__wrapper {
+    position: static;
+    margin: 0;
+  }
+
   .portrait-l {
     display: inline;
   }
 }
 
 @media (max-width: 480px) {
+  .jumbotron {
+    background-position: -400px 100%;
+    min-height: 0px;
+  }
+
+  .jumbotron__wrapper {
+    position: static;
+    margin: 0;
+  }
+
   .portrait-s {
     display: inline;
   }
