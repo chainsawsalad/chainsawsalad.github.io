@@ -207,13 +207,15 @@ figcaption {
  * --------------------------------------------------
  */
 @media screen and (max-width: 768px) {
+  .content-container {
+    overflow-x: hidden; /* fixes bug in Android 4.2 Chrome */
+  }
+
   .row-offcanvas {
     position: relative;
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
-
-    overflow-x: hidden; /* fixes bug in Android 4.2 Chrome */
   }
 
   .row-offcanvas-right
