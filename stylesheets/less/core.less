@@ -1,11 +1,32 @@
+@import "font-awesome/font-awesome.less";
+
+@imagePath: '/images';
+
+
 // Colors
-@document-color: #ccc;
+@gray:            #ccc;
+@darkGray:        #222;
+@darkGrayText:    #999;
+
+@lightBlueHigh:   #73d8ff;
+@lightBlueMedium: #40caff;
+@lightBlueLow:    #00b9ff;
+
+@paleBlueHigh:    #3098bf;
+@paleBlueLow:     #0078a6;
+
+@darkBlueHigh:    #3046bf;
+@darkBlueMedium:  #0028ff;
+@darkBlueLow:     #001aa6;
+
+
+@document-color: @gray;
 @body-color: #fff;
 @text-color: #000;
 
-@lowlight-color: #ccc;
-@highlight-color: #0bf;
-@secondary-color: #73d8ff;
+@lowlight-color: @gray;
+@highlight-color: @lightBlueLow;
+@secondary-color: @lightBlueHigh;
 
 
 // Dimensions
@@ -34,6 +55,7 @@ body {
   background-color: @secondary-color;
   color: @text-color;
   margin: 0;
+  background-color: @lightBlueMedium;
   background-image: repeating-linear-gradient(
     45deg,
     transparent,
@@ -81,8 +103,8 @@ body {
     rgba(0, 0, 0, .3) 182px,
     rgba(0, 0, 0, .3) 232px,
     transparent 232px
-  ),
-  url(../img/greyzz_@2X_color.png);
+  );//,
+  //url('@{imagePath}/greyzz_@2X_blue.png');
   background-size: auto, auto, 149px 139px;
 }
 

@@ -1,4 +1,3 @@
-@import "../font-awesome/less/font-awesome.less";
 @import "core.less";
 
 /*
@@ -47,7 +46,7 @@ figcaption {
 
 .content-container {
   background-color: @body-color;
-  padding: 1.5em;
+  padding: 1.5em 1.5em 0;
 }
 
 .nav .nav {
@@ -81,14 +80,14 @@ figcaption {
 .jumbotron {
   position: relative;
   color: white;
-  background-image: url(/img/fenway_monster.png);
+  background-image: url('@{imagePath}/fenway_monster.png');
   background-size: 932px 439px;
   background-position: -46px 100%;
   min-height: 390px;
 }
 
 .jumbotron.rainbow {
-  background-image: url(/img/fenway_rainbow.jpg);
+  background-image: url('@{imagePath}/fenway_rainbow.jpg');
   background-size: 110%;
   min-height: 470px;
   background-position: 0 -53px;
@@ -130,9 +129,23 @@ figcaption {
 }
 
 .sidebar-offcanvas .affix {
-  top: 100px;
+  top: 70px;
   width: 260px;
 }
+
+footer {
+  background-color: @darkGray;
+  color: @darkGrayText;
+  margin: 2em -1.5em 0;
+  border-top: 1px dashed @darkGrayText;
+  padding: 1em 1.5em;
+}
+
+footer .footer-blurb {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
 
 @media (min-width: 1200px) {
   .portrait-xl {
