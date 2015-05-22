@@ -1896,8 +1896,8 @@ h2 {
   -webkit-transform: rotateZ(-198deg);
   transform: rotateZ(-198deg);
   display: inline-block;
-  left: -40%;
-  bottom: 35%;
+  left: -45%;
+  bottom: 20%;
 }
 .skill-chart .slice-4 {
   -webkit-transform: rotateZ(234deg);
@@ -1909,7 +1909,7 @@ h2 {
   transform: rotateZ(-234deg);
   display: inline-block;
   left: -50%;
-  bottom: 0;
+  bottom: 15%;
 }
 .skill-chart .slice-5 {
   -webkit-transform: rotateZ(270deg);
