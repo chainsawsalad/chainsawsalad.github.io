@@ -1587,8 +1587,6 @@ h2 {
 /***********************/
 .name-title-collection__title .flipper {
   display: inline-block;
-  -webkit-perspective: 1000;
-  perspective: 1000;
 }
 .name-title-collection__title .word-container {
   position: relative;
@@ -1600,10 +1598,12 @@ h2 {
   transform-origin: 100% 0.75em;
   -webkit-animation: spin 20s ease 10s infinite reverse;
   animation: spin 20s ease 10s infinite reverse;
+  -ms-animation: none;
 }
 .name-title-collection__title .word-container.adjectives {
   -webkit-animation: spin 20s ease 22.5s infinite reverse;
   animation: spin 20s ease 22.5s infinite reverse;
+  -ms-animation: none;
 }
 .name-title-collection__title__word {
   position: absolute;
