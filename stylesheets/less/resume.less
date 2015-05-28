@@ -39,6 +39,7 @@
 .spinAnimation(@time, @delay: 0) {
   -webkit-animation: spin unit(@time, s) ease unit(@delay, s) infinite reverse;
   animation: spin unit(@time, s) ease unit(@delay, s) infinite reverse;
+  -ms-animation: none; //no support of preserve-3d, which breaks everything
 }
 
 .noAnimation() {
@@ -170,8 +171,8 @@ h2 {
 
 .name-title-collection__title .flipper {
   display: inline-block;
-  -webkit-perspective: 1000;
-  perspective: 1000;
+  //-webkit-perspective: 1000px;
+  //perspective: 1000px;
 }
 
 .name-title-collection__title .word-container {
