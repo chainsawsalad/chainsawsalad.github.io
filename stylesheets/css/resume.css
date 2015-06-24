@@ -1508,6 +1508,9 @@ body {
 body ::selection {
   background: #cccccc;
 }
+a {
+  color: #ff4600;
+}
 p {
   margin: 0;
 }
@@ -1701,10 +1704,6 @@ h2 {
 .emphasis {
   color: #00b9ff;
 }
-.gutter {
-  float: right;
-  width: 30%;
-}
 .content {
   width: 70%;
   padding-right: 1em;
@@ -1729,7 +1728,9 @@ h2 {
 .resume-section__body-wrapper {
   padding-left: .5em;
 }
-.gutter.resume-section__body-wrapper {
+.gutter {
+  float: right;
+  width: 30%;
   padding-left: 1em;
   margin-left: 1em;
 }

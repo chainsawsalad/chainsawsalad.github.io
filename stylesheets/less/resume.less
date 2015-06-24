@@ -3,6 +3,7 @@
 //Colors
 @timeline-icon-color: #000;
 @timeline-icon-background: #fff;
+@resume-anchor-color: #ff4600;
 
 
 // Dimensions
@@ -79,6 +80,9 @@ body ::selection {
   background: @lowlight-color;
 }
 
+a {
+  color: @resume-anchor-color;
+}
 
 p {
   margin: 0;
@@ -305,11 +309,6 @@ h2 {
   color: @highlight-color;
 }
 
-.gutter {
-  float: right;
-  width: 30%;
-}
-
 .content {
   width: 70%;
   padding-right: 1em;
@@ -340,7 +339,9 @@ h2 {
   padding-left: .5em;
 }
 
-.gutter.resume-section__body-wrapper {
+.gutter {
+  float: right;
+  width: 30%;
   padding-left: 1em;
   margin-left: 1em;
 }
